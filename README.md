@@ -43,20 +43,13 @@ GROQ_API_KEY=your_key_here
 ```
 Get a free key at [console.groq.com](https://console.groq.com).
 
-### 5. Ingest the PDF (builds the vector database)
-run:
-```bash
-python ingest.py
-```
-This only needs to be run **once**.
-
-### 6. Start the API server
+### 5. Start the API server
 ```bash
 uvicorn main:app --reload
 ```
 Server runs at `http://127.0.0.1:8000`
 
-### 7. Test it
+### 6. Test it
 Open `http://127.0.0.1:8000/docs` for the interactive Swagger UI.
 **Response shape:**
 ```json
